@@ -1,1 +1,43 @@
-<h1>Burgers</h1>
+<div id ="headerSection">
+  <h2>Eat Da Burger</h2>
+</div>
+
+<!-- Middle Section -->
+<div id="middleSection">
+
+  <!-- Left  -->
+  <div class="leftMiddle">
+    <div class="uneaten center">
+      {{#each burger}}
+        {{#unless devoured}}
+          {{> burgers/burgerBlock devoured=1}}
+        {{/unless}}
+      {{/each}}
+    </div>
+  </div>
+
+  <!-- Center -->
+  <div class="centerMiddle">
+    <div class="center">
+      <input id="burgerName" type="text" placeholder="Name of Your Burger" data-eaten="0">
+      <button id="addBurger" type="button">Add Your Burger</button>
+    </div>
+  </div>
+
+  <!-- Right -->
+  <div class="rightMiddle">
+    <div class="eaten center">
+      {{#each burger}}
+        {{#if devoured}}
+          {{> burgers/burgerBlock devoured=0}}
+        {{/if}}
+      {{/each}}
+    </div>
+  </div>
+
+</div>
+<!-- End of Middle Section -->
+
+<div id ="footerSection">
+  <p>Created By John Merchan</p>
+</div>
