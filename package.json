@@ -1,0 +1,29 @@
+{
+  "name": "do-you-want-to-eat-burgers",
+  "version": "1.0.0",
+  "description": "App to eat Burgers!",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johnnyboysydney/Do-you-want-to-Eat-Burgers.git"
+  },
+  "keywords": [
+    "express",
+    "express-handlebars",
+    "mysql"
+  ],
+  "author": "John Merchan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/johnnyboysydney/Do-you-want-to-Eat-Burgers/issues"
+  },
+  "homepage": "https://github.com/johnnyboysydney/Do-you-want-to-Eat-Burgers#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^4.0.4",
+    "mysql": "^2.18.1"
+  }
+}
