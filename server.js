@@ -7,7 +7,7 @@ const PORT = process.env.PORT || 9080;
 const app = express();
 
 // Middleware
-app.use(bodyParser.urlencoded({ extended: true })); 
+app.use(express.urlencoded({ extended: true })); 
 app.use(express.static("public")); 
 
 // Template engine
