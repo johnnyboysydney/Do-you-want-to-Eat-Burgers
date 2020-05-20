@@ -34,10 +34,11 @@ function printQuestionMarks(num) {
     return arr.toString();
   }
 
-// Object for all our SQL statement functions.  
+// Object for all our SQL statement functions.
 let orm = {
+    // Display all burgers
     selectAll: function(tableInput, cb) {
-        var queryString = "SELECT * FROM " + tableInput + ";";
+        let queryString = "SELECT * FROM " + tableInput + ";";
         connection.query(queryString, function(err, result) {
             if (err) {
               throw err;
@@ -45,22 +46,20 @@ let orm = {
             cb(result);
         });
     },
-    insertOne: function(table, objColVals, condition, cb) {
-        var queryString = "INSERT " + table;
-    
-        queryString += " SET ";
-        queryString += objToSql(objColVals);
-        queryString += " WHERE ";
-        queryString += condition;
-    
-        console.log(queryString);
-        connection.query(queryString, function(err, result) {
+    insertOne: function(table, cols, vals, cb) {
+      let queryString = "INSERT INTO " + table;
+      queryString += " (";
+      queryString += cols.toString();
+      queryString += ") ";
+      queryString += "VALUES (";
+      queryString += printQuestionMarks(vals.length);
+      queryString += ") ";
+      connection.query(queryString, vals, function(err, result) {
           if (err) {
-            throw err;
+          throw err;
           }
-    
           cb(result);
-        });
+      });
     },
     updateOne: function(table, objColVals, condition, cb) {
         var queryString = "UPDATE " + table;
@@ -79,7 +78,7 @@ let orm = {
           cb(result);
         });
       },
-},
+}
 
 
 // Export the orm object for the model (cat.js).
