@@ -1,6 +1,7 @@
 body {
     width:400px;
     margin: 0 auto;
+    background-color: burlywood;
   }
   body, button {
     font-family: 'Indie Flower', cursive;
