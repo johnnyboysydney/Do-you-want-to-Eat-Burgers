@@ -1,20 +1,19 @@
-// Dependencies and Variables
-let express = require("express");
-let router = express.Router();
+var express = require("express");
+var router = express.Router();
 
-// Import the model to use its database functions.
-let burger = require("../models/burger.js")
+//import the burger model
+var burger = require("../models/burger.js");
 
-// Create all our routes and set up logic within those routes where required.
+//routes
+//get burgers
 router.get("/", function(req, res) {
-    burger.all(function(data) {
-      let hbsObject = {
-        burgers: data
-      };
-      console.log(hbsObject);
-      res.render("index", hbsObject);
-    });
+  burger.all(function(data) {
+    var hbsObject = {
+      burgers: data
+    };
+    res.render("index", hbsObject);
   });
+});
 //post new burger
 router.post("/api/burgers", function(req, res) {
   burger.create(["burger_name", "devoured"], [req.body.burger_name, req.body.devoured], function(result) {
@@ -39,5 +38,6 @@ router.put("/api/burgers/:id", function(req, res) {
     }
   );
 });
- // Export routes for server.js to use.
-module.exports = router; 
+
+//export routes for server.js to use
+module.exports = router;
