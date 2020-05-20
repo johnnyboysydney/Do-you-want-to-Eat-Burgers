@@ -2,8 +2,9 @@
 
 -- Insert rows into table
 USE burgers_db;
-INSERT INTO burgers (burger_name, devoured) 
+INSERT INTO burgers (id, burger_name, devoured) 
 VALUES 
-('Cheese Burger', FALSE), 
-('Big Mac', FALSE),
-('Triple Chiken Burger', FALSE)
+(1,'Cheese Burger', FALSE), 
+(2,'Big Mac', FALSE),
+(3, 'Triple Chicken Burger', FALSE),
+(4, 'Supreme Burger', FALSE);
