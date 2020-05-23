@@ -58,7 +58,29 @@ To use this application locally:
 
 ### Schema
 
+Using one table for the app to work, only 3 columns, id, burger_name and devoured. See below syntax
+
+```SQL
+DROP DATABASE IF EXISTS burgers_db;
+CREATE DATABASE burgers_db;
+USE burgers_db;
+
+CREATE TABLE burgers
+(
+    id int NOT NULL AUTO_INCREMENT,
+    burger_name VARCHAR(110) NOT NULL,
+    devoured BOOLEAN DEFAULT false,
+    PRIMARY KEY (id)
+)
+```
+
 ### Dependencies
+
+```JSON
+    "express": "^4.17.1"
+    "express-handlebars": "^4.0.4"
+    "mysql": "^2.18.1"
+```
 
 ## Tests
 
