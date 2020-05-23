@@ -36,7 +36,7 @@ Below some links of interest:
 
 - Eat-Da-Burger! is a restaurant app that lets users input the names of burgers they'd like to eat.
 
--Whenever a user submits a burger's name, your app will display the burger on the left side of the page -- waiting to be devoured.
+- Whenever a user submits a burger's name, your app will display the burger on the left side of the page -- waiting to be devoured.
 
 - Each burger in the waiting area also has a Devour it! button. When the user clicks it, the burger will move to the right side of the page.
 
@@ -53,7 +53,7 @@ To use this application locally:
 - Using the _seeds.sql_ file to popluate the DB
 - Once you have all the above created, you can edit the _server.js_ file where the password is and add your password to access your local DataBase.
 - You can then open a terminal or cmd prompt, navigate to the folder where **_server.js_** is located and type: ``node server.js``
-- Once the server is running, open a browser and navigate to localhost:8080 or th eport you have selected
+- Once the server is running, open a browser and navigate to localhost:8080 or the port you have selected
 - Enjoy creating your burgers and eating them!
 
 ### Schema
@@ -81,7 +81,7 @@ Yes, you can modify and refractor the code
 
 ## Demo
 
-![Demo](./assets/demo.gif)
+![Demo](./public/assets/demo/demo.gif)
 
 ## License
 
@@ -103,3 +103,4 @@ Copyright 2020 &copy; John Merchan
 :australia:
 
 [Table of Content](#Table-of-Content) --- [Back to Top](#Employee-Tracker) --- [Installation](#Installation)
+
