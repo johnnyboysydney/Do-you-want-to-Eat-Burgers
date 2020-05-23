@@ -1,21 +1,36 @@
 body {
-    width:400px;
-    margin: 0 auto;
-    background-color: burlywood;
-  }
-  body, button {
-    font-family: 'Indie Flower', cursive;
-  }
-  h2 {
-    margin: 1.5em .25em .1em 0em;
-  }
-  button, li {
-    text-transform: uppercase;
-    margin: .25em;
-  }
-  li {
-    list-style: none;
-  }
-  button #add-burger {
-    margin: 0 auto !important;
-  }
+  background-color: burlywood;
+}
+.container-fluid {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  margin-top: 5%;
+  width: 15%;
+  border: 0;
+  vertical-align: middle;
+}
+.jumbotron {
+  padding-right: 60px;
+  padding-left: 60px;
+  border-radius: 6px;
+  text-align: center;
+  background-color: burlywood;
+  color: aliceblue;
+}
+.left {
+  text-align: center;
+}
+.right {
+  text-align: center;
+}
+.bottom {
+  text-align: center;
+  color: aliceblue;
+}
+ul {
+  list-style: none;
+}
