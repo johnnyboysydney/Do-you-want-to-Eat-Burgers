@@ -126,5 +126,4 @@ Copyright 2020 &copy; John Merchan
 
 :australia:
 
-[Table of Content](#Table-of-Content) --- [Back to Top](#Employee-Tracker) --- [Installation](#Installation)
-
+[Table of Content](#Table-of-Content) --- [Back to Top](#Do-you-want-to-Eat-Burgers) --- [Installation](#Installation)
